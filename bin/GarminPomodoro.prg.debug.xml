@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="34" pc="268435458" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="35" pc="268435477" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="36" pc="268435494" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="37" pc="268435505" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="40" pc="268435520" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="44" pc="268435535" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="50" pc="268435554" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="51" pc="268435567" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="52" pc="268435580" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="53" pc="268435590" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="59" pc="268435634" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="60" pc="268435647" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="61" pc="268435660" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="62" pc="268435670" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="67" pc="268435714" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="68" pc="268435735" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="69" pc="268435759" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="70" pc="268435777" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="75" pc="268435793" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="76" pc="268435814" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="77" pc="268435838" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="78" pc="268435856" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="87" pc="268435872" symbol="onLayout"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="88" pc="268435906" symbol="onLayout"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="93" pc="268435921" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="95" pc="268435921" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="96" pc="268435957" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="97" pc="268435969" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="98" pc="268436005" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="99" pc="268436042" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="100" pc="268436126" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="109" pc="268436208" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="110" pc="268436222" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="111" pc="268436239" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="114" pc="268436255" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="118" pc="268436270" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="119" pc="268436287" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="122" pc="268436303" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="125" pc="268436315" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\Timer.mc" lineNum="22" pc="268436331" symbol="getInitialView"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="20" module="true" symbol="Menus"/>
+<entry field="true" id="23" symbol="AppName"/>
+<entry field="true" id="22" symbol="LauncherIcon"/>
+<entry field="true" id="11" symbol="worksession_active"/>
+<entry id="8388771" module="true" symbol="Drawables"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="19" object="true" symbol="MyApp"/>
+<entry id="21" module="true" symbol="Layouts"/>
+<entry field="true" id="12" symbol="toneIdx"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8" symbol="timer"/>
+<entry field="true" id="10" symbol="title_string"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="14" symbol="vibrateData"/>
+<entry id="8388772" module="true" symbol="Fonts"/>
+<entry id="8388705" method="true" symbol="callback"/>
+<entry id="8388769" module="true" symbol="Rez"/>
+<entry id="17" method="true" symbol="onIdle"/>
+<entry field="true" id="9" symbol="count"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8388656" object="true" symbol="InputDelegate"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="18" object="true" symbol="MyWatchView"/>
+<entry field="true" id="13" symbol="toneNames"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="15" method="true" symbol="onBreak"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="8388770" module="true" symbol="Strings"/>
+<entry id="16" method="true" symbol="onStartBreak"/>
+</symbolTable>
+<localVars>
+<entry endPc="268436204" name="string" stackId="2" startPc="268435921"/>
+</localVars>
+<annotations/>
+<functions>
+<functionEntry name="callback">
+<documentation/>
+</functionEntry>
+<functionEntry name="onBreak">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStart">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStartBreak">
+<documentation/>
+</functionEntry>
+<functionEntry name="onIdle">
+<documentation/>
+</functionEntry>
+<functionEntry name="onLayout" parent="MyWatchView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onUpdate" parent="MyWatchView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry name="onSelect" parent="InputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onMenu" parent="InputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStart" parent="MyApp">
+<documentation/>
+</functionEntry>
+<functionEntry name="onStop" parent="MyApp">
+<documentation/>
+</functionEntry>
+<functionEntry name="getInitialView" parent="MyApp">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
