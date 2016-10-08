@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="34" pc="268435458" symbol="callback"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="35" pc="268435477" symbol="callback"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="36" pc="268435494" symbol="callback"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="37" pc="268435505" symbol="callback"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="40" pc="268435520" symbol="callback"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="44" pc="268435535" symbol="callback"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="50" pc="268435554" symbol="onBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="51" pc="268435567" symbol="onBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="52" pc="268435580" symbol="onBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="53" pc="268435590" symbol="onBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="59" pc="268435634" symbol="onStart"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="60" pc="268435647" symbol="onStart"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="61" pc="268435660" symbol="onStart"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="62" pc="268435670" symbol="onStart"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="67" pc="268435714" symbol="onStartBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="68" pc="268435735" symbol="onStartBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="69" pc="268435759" symbol="onStartBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="70" pc="268435777" symbol="onStartBreak"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="75" pc="268435793" symbol="onIdle"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="76" pc="268435814" symbol="onIdle"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="77" pc="268435838" symbol="onIdle"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="78" pc="268435856" symbol="onIdle"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="87" pc="268435872" symbol="onLayout"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="88" pc="268435906" symbol="onLayout"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="93" pc="268435921" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="95" pc="268435921" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="96" pc="268435957" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="97" pc="268435969" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="98" pc="268436005" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="99" pc="268436042" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="100" pc="268436126" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="109" pc="268436208" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="110" pc="268436222" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="111" pc="268436239" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="114" pc="268436255" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="118" pc="268436270" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="119" pc="268436287" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="122" pc="268436303" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="125" pc="268436315" symbol="onSelect"/>
-<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\Timer.mc" lineNum="22" pc="268436331" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="27" pc="268435458" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="28" pc="268435477" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="29" pc="268435494" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="30" pc="268435505" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="33" pc="268435520" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="37" pc="268435535" symbol="callback"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="43" pc="268435554" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="44" pc="268435567" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="45" pc="268435580" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="46" pc="268435590" symbol="onBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="52" pc="268435634" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="53" pc="268435647" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="54" pc="268435660" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="55" pc="268435670" symbol="onStart"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="60" pc="268435714" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="61" pc="268435735" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="62" pc="268435759" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="63" pc="268435777" symbol="onStartBreak"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="68" pc="268435793" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="69" pc="268435814" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="70" pc="268435838" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="71" pc="268435856" symbol="onIdle"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="80" pc="268435872" symbol="onLayout"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="81" pc="268435906" symbol="onLayout"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="82" pc="268435919" symbol="onLayout"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="83" pc="268435932" symbol="onLayout"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="89" pc="268435945" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="91" pc="268435945" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="92" pc="268435981" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="93" pc="268435993" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="94" pc="268436029" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="95" pc="268436066" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="96" pc="268436150" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="105" pc="268436232" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="106" pc="268436246" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="107" pc="268436263" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="110" pc="268436279" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="114" pc="268436294" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="115" pc="268436311" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="118" pc="268436327" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\TimerView.mc" lineNum="121" pc="268436339" symbol="onSelect"/>
+<entry filename="C:\\Users\\Johan\\workspace\\GarminPomodoro\\source\\Timer.mc" lineNum="22" pc="268436355" symbol="getInitialView"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="20" module="true" symbol="Menus"/>
@@ -77,7 +79,7 @@
 <entry id="16" method="true" symbol="onStartBreak"/>
 </symbolTable>
 <localVars>
-<entry endPc="268436204" name="string" stackId="2" startPc="268435921"/>
+<entry endPc="268436228" name="string" stackId="2" startPc="268435945"/>
 </localVars>
 <annotations/>
 <functions>

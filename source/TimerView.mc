@@ -1,14 +1,7 @@
-//!
-//! Copyright 2015 by Garmin Ltd. or its subsidiaries.
-//! Subject to Garmin SDK License Agreement and Wearables
-//! Application Developer Agreement.
-//!
-
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.Timer as Timer;
 using Toybox.Attention as Attention;
-
 
 var timer;
 var count;
@@ -85,7 +78,10 @@ class MyWatchView extends Ui.View
     function onLayout(dc)
     {
         timer = new Timer.Timer();
-		onStart();
+        count = 0;
+  		title_string = "Start working";
+  		worksession_active = false;
+		//onStart();
     }
 
     function onUpdate(dc)
