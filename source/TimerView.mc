@@ -3,6 +3,7 @@ using Toybox.Graphics as Gfx;
 using Toybox.Timer as Timer;
 using Toybox.Attention as Attention;
 
+
 var timer;
 var count;
 var title_string;
@@ -11,6 +12,12 @@ var worksession_active;
 var toneIdx = 0;
 var toneNames = [ "Alarm" ];
 
+var IDLE = 0;
+var WORKING = 1;
+var WORK_COMPLETE = 2;
+var BREAK = 3;
+var BREAK_COMPLETE = 4;
+var state;
 
 var vibrateData = [
                     new Attention.VibeProfile(  25, 100 ),
@@ -26,49 +33,49 @@ function callback()
 {
 	count -= 1;
     if (count <= 0) {
-    	if (worksession_active) {
-     		onStartBreak();
+    	if (state == WORKING) {
+     		onWorkComplete();
      	}
      	else {
-     		onIdle();
+     		onBreakComplete();
      	}
     }
     
     Ui.requestUpdate();
 }
 
-function onBreak()
-{
-  // 300
-  count = 300;
-  title_string = "Relax";
-  worksession_active = false;
-  timer.start( method(:callback), 1000, true );
-}
-
-function onStart()
-{
-	// 1500
-	count = 1500;
-	title_string = "Keep Working!";
-	worksession_active = true;
-	timer.start( method(:callback), 1000, true );
-}
-
 function onStartBreak()
+{
+  count = BREAK_DURATION;
+  title_string = "Relax";
+  timer.start( method(:callback), 1000, true );
+  state = BREAK;
+}
+
+function onStartWork()
+{
+	count = WORK_DURATION;
+	title_string = "Keep Working!";
+	timer.start( method(:callback), 1000, true );
+	state = WORKING;
+}
+
+function onWorkComplete()
 {
 	Attention.playTone( 2 );
     Attention.vibrate( vibrateData );
 	timer.stop();
 	title_string = "Take a break";
+	state = WORK_COMPLETE;
 }
 
-function onIdle()
+function onBreakComplete()
 {
 	Attention.playTone( 1 );
     Attention.vibrate( vibrateData );
 	timer.stop();
 	title_string = "Start work Session!";
+	state = BREAK_COMPLETE;
 }
 
 class MyWatchView extends Ui.View
@@ -78,10 +85,9 @@ class MyWatchView extends Ui.View
     function onLayout(dc)
     {
         timer = new Timer.Timer();
-        count = 0;
+        count = WORK_DURATION;
   		title_string = "Start working";
-  		worksession_active = false;
-		//onStart();
+  		state = IDLE;
     }
 
     function onUpdate(dc)
@@ -102,22 +108,22 @@ class InputDelegate extends Ui.BehaviorDelegate
 {
 	function onSelect()
 	{
-		if (worksession_active == true) {
-			if (count > 0) {
-				title_string = "No slacking!";
-			}
-			else {
-				onBreak();
-			}
-    	}
-    	else {
-    		if (count > 0) {
-    			count = 1;
-    		}
-    		else {
-        		onStart();
-        	}
-        }
+		if (state == IDLE) {
+			onStartWork();
+		}
+		else if (state == WORKING) {
+			title_string = "No slacking!";
+		}
+		else if (state == WORK_COMPLETE) {
+			onStartBreak();
+		}
+		else if (state == BREAK) {
+			// Set timer to 1 to skip break
+			count = 1;
+		}
+		else if (state == BREAK_COMPLETE) {
+			onStartWork();
+		}
         return true;
 	}
 	
