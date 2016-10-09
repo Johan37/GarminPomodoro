@@ -3,6 +3,8 @@ using Toybox.Graphics as Gfx;
 using Toybox.Timer as Timer;
 using Toybox.Attention as Attention;
 
+var WORK_DURATION = 1500; // 1500
+var BREAK_DURATION = 300; // 300
 
 var timer;
 var count;
