@@ -6,8 +6,9 @@ using Toybox.Attention as Attention;
 var WORK_DURATION = 1500; // 1500
 var BREAK_DURATION = 300; // 300
 
+var startTime;
 var timer;
-var count;
+var timerDuration;
 var title_string;
 var worksession_active;
 
@@ -33,32 +34,22 @@ var vibrateData = [
 
 function callback()
 {
-	count -= 1;
-    if (count <= 0) {
-    	if (state == WORKING) {
-     		onWorkComplete();
-     	}
-     	else {
-     		onBreakComplete();
-     	}
-    }
-    
-    Ui.requestUpdate();
+	Ui.requestUpdate();
 }
 
 function onStartBreak()
 {
-  count = BREAK_DURATION;
-  title_string = "Relax";
-  timer.start( method(:callback), 1000, true );
-  state = BREAK;
+	startTime = Time.now();
+	timerDuration = BREAK_DURATION;
+	title_string = "Relax";
+	state = BREAK;
 }
 
 function onStartWork()
 {
-	count = WORK_DURATION;
+	startTime = Time.now();
+	timerDuration = WORK_DURATION;
 	title_string = "Keep Working!";
-	timer.start( method(:callback), 1000, true );
 	state = WORKING;
 }
 
@@ -66,7 +57,6 @@ function onWorkComplete()
 {
 	Attention.playTone( 2 );
     Attention.vibrate( vibrateData );
-	timer.stop();
 	title_string = "Take a break";
 	state = WORK_COMPLETE;
 }
@@ -75,31 +65,44 @@ function onBreakComplete()
 {
 	Attention.playTone( 1 );
     Attention.vibrate( vibrateData );
-	timer.stop();
 	title_string = "Start work Session!";
 	state = BREAK_COMPLETE;
 }
 
 class MyWatchView extends Ui.View
-{
-
-    
+{   
     function onLayout(dc)
     {
         timer = new Timer.Timer();
-        count = WORK_DURATION;
-  		title_string = "Start working";
+        timer.start( method(:callback), 500, true );
+        
+  		title_string = "Start work session!";
   		state = IDLE;
+ 
+  		startTime = Time.now();
     }
 
     function onUpdate(dc)
     {
-        var string;
-
+    	var timeLeft = 0;
+    	if (state == WORKING || state == BREAK ) {
+	    	var timeElapsed = Time.now().subtract(startTime);
+	        timeLeft = timerDuration - timeElapsed.value();
+		    if (timeLeft <= 0) {
+		    	timeLeft = 0;
+		    	if (state == WORKING) {
+		     		onWorkComplete();
+		     	}
+		     	else {
+		     		onBreakComplete();
+		     	}
+		    }
+	    }
+        
       	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
         dc.clear();
         dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
-        string = count / 60 + ":" + count % 60;
+        var string = timeLeft / 60 + ":" + timeLeft % 60;
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 50 , Gfx.FONT_MEDIUM, title_string, Gfx.TEXT_JUSTIFY_CENTER );
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 20, Gfx.FONT_NUMBER_HOT, string, Gfx.TEXT_JUSTIFY_CENTER );
     }
@@ -110,6 +113,8 @@ class InputDelegate extends Ui.BehaviorDelegate
 {
 	function onSelect()
 	{
+		var time = Time.now().subtract(startTime);
+        System.println("Time " + time.value());
 		if (state == IDLE) {
 			onStartWork();
 		}
@@ -120,8 +125,7 @@ class InputDelegate extends Ui.BehaviorDelegate
 			onStartBreak();
 		}
 		else if (state == BREAK) {
-			// Set timer to 1 to skip break
-			count = 1;
+			timerDuration = 0;
 		}
 		else if (state == BREAK_COMPLETE) {
 			onStartWork();
