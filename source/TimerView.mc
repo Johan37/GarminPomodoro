@@ -1,16 +1,22 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.Timer as Timer;
+using Toybox.Time as Time;
 using Toybox.Attention as Attention;
+using Toybox.Application as App;
 
 var WORK_DURATION = 1500; // 1500
 var BREAK_DURATION = 300; // 300
+
+var STARTTIME_KEY = 1;
+var STATE_KEY = 2;
+var TITLE_KEY = 3;
+var DURATION_KEY = 4;
 
 var startTime;
 var timer;
 var timerDuration;
 var title_string;
-var worksession_active;
 
 var toneIdx = 0;
 var toneNames = [ "Alarm" ];
@@ -72,14 +78,29 @@ function onBreakComplete()
 class MyWatchView extends Ui.View
 {   
     function onLayout(dc)
-    {
-        timer = new Timer.Timer();
+    {      
+ 		var app = App.getApp();
+ 		
+ 		var loadedTime = app.getProperty(STARTTIME_KEY);
+ 		startTime = new Time.Moment(loadedTime);
+ 		state = app.getProperty(STATE_KEY);
+ 		title_string = app.getProperty(TITLE_KEY);
+ 		timerDuration = app.getProperty(DURATION_KEY);
+ 		
+ 		if (loadedTime == null) {
+  			startTime = Time.now();
+  		}
+  		if (state == null) {
+	  		state = IDLE;
+  		}
+  		if (title_string == null) {
+	  		title_string = "Start work session!";
+  		}
+  		if (timerDuration == null) {
+  			timerDuration = 0;
+  		}
+  		timer = new Timer.Timer();
         timer.start( method(:callback), 500, true );
-        
-  		title_string = "Start work session!";
-  		state = IDLE;
- 
-  		startTime = Time.now();
     }
 
     function onUpdate(dc)
@@ -105,6 +126,14 @@ class MyWatchView extends Ui.View
         var string = timeLeft / 60 + ":" + timeLeft % 60;
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 50 , Gfx.FONT_MEDIUM, title_string, Gfx.TEXT_JUSTIFY_CENTER );
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 20, Gfx.FONT_NUMBER_HOT, string, Gfx.TEXT_JUSTIFY_CENTER );
+    }
+    
+    function onHide() {
+    	var app = App.getApp();
+    	app.setProperty(STARTTIME_KEY, startTime.value());
+    	app.setProperty(STATE_KEY, state);
+    	app.setProperty(TITLE_KEY, title_string);
+    	app.setProperty(DURATION_KEY, timerDuration);
     }
 
 }
