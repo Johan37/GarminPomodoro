@@ -164,6 +164,7 @@ class InputDelegate extends Ui.BehaviorDelegate
 	
     function onMenu()
     {
-
+        Ui.pushView(new TimePicker(), new TimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
+        return true;
     }
 }
