@@ -1,7 +1,10 @@
 <resources>
     <string id="AppName">Timer</string>
     <string id="timePickerTitle">Pick a time of day</string>
-        <string id="timeSeparator">:</string>
+    <string id="timeSeparator">:</string>
     <string id="morning">AM</string>
     <string id="afternoon">PM</string>
+    <!-- Date Picker -->
+    <string id="pickerTitle">Pick work units</string>
+    <string id="separator">-</string>
 </resources>
