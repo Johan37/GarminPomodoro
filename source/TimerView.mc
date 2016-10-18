@@ -11,7 +11,6 @@ var BREAK_DURATION = 300; // 300
 var STARTTIME_KEY = 1;
 var STATE_KEY = 2;
 var TITLE_KEY = 3;
-var DURATION_KEY = 4;
 
 var startTime;
 var timer;
@@ -77,15 +76,28 @@ function onBreakComplete()
 
 class MyWatchView extends Ui.View
 {   
+	// Called on Load
     function onLayout(dc)
     {      
- 		var app = App.getApp();
+  		timer = new Timer.Timer();
+        timer.start( method(:callback), 500, true );
+    }
+    
+    // Called when app is brought into view
+    function onShow() {
+     	var app = App.getApp();
  		
- 		var loadedTime = app.getProperty(STARTTIME_KEY);
+ 		var loadedTime = app.getProperty("STARTTIME_KEY");
  		startTime = new Time.Moment(loadedTime);
- 		state = app.getProperty(STATE_KEY);
- 		title_string = app.getProperty(TITLE_KEY);
- 		timerDuration = app.getProperty(DURATION_KEY);
+ 		state = app.getProperty("STATE_KEY");
+ 		title_string = app.getProperty("TITLE_KEY");
+ 		timerDuration = app.getProperty("DURATION_KEY");
+ 		
+ 		WORK_DURATION = app.getProperty("WORKUNIT_KEY");
+		BREAK_DURATION = app.getProperty("BREAKUNIT_KEY");
+		
+		System.println("WORK " + WORK_DURATION);
+		System.println("dur " + timerDuration);
  		
  		if (loadedTime == null) {
   			startTime = Time.now();
@@ -99,8 +111,6 @@ class MyWatchView extends Ui.View
   		if (timerDuration == null) {
   			timerDuration = 0;
   		}
-  		timer = new Timer.Timer();
-        timer.start( method(:callback), 500, true );
     }
 
     function onUpdate(dc)
@@ -130,10 +140,10 @@ class MyWatchView extends Ui.View
     
     function onHide() {
     	var app = App.getApp();
-    	app.setProperty(STARTTIME_KEY, startTime.value());
-    	app.setProperty(STATE_KEY, state);
-    	app.setProperty(TITLE_KEY, title_string);
-    	app.setProperty(DURATION_KEY, timerDuration);
+    	app.setProperty("STARTTIME_KEY", startTime.value());
+    	app.setProperty("STATE_KEY", state);
+    	app.setProperty("TITLE_KEY", title_string);
+    	app.setProperty("DURATION_KEY", timerDuration);
     }
 
 }
