@@ -177,4 +177,10 @@ class InputDelegate extends Ui.BehaviorDelegate
         Ui.pushView(new TimePicker(), new TimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
         return true;
     }
+    
+    function onNextPage()
+    {
+		System.println("In Reset");
+		onBreakComplete();
+    }
 }
