@@ -3,14 +3,9 @@ using Toybox.Graphics as Gfx;
 using Toybox.System as Sys;
 using Toybox.WatchUi as Ui;
 
-const FACTORY_COUNT_24_HOUR = 3;
-const FACTORY_COUNT_12_HOUR = 4;
-const MINUTE_FORMAT = "%02d";
-
 class TimePicker extends Ui.Picker {
 
     function initialize() {
-
         var title = new Ui.Text({:text=>Rez.Strings.pickerTitle, :locX =>Ui.LAYOUT_HALIGN_CENTER, :locY=>Ui.LAYOUT_VALIGN_BOTTOM, :color=>Gfx.COLOR_WHITE});
         var separator = new Ui.Text({:text=>Rez.Strings.separator, :locX =>Ui.LAYOUT_HALIGN_CENTER, :locY=>Ui.LAYOUT_VALIGN_CENTER, :color=>Gfx.COLOR_WHITE});
         Picker.initialize({:title=>title, :pattern=>[new NumberFactory(1,90,1), separator, new NumberFactory(0,30,1,{:font=>Gfx.FONT_NUMBER_MEDIUM})]});
