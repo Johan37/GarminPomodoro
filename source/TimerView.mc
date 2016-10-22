@@ -80,7 +80,7 @@ class MyWatchView extends Ui.View
     function onLayout(dc)
     {      
   		timer = new Timer.Timer();
-        timer.start( method(:callback), 500, true );
+        timer.start( method(:callback), 250, true );
     }
     
     // Called when app is brought into view
@@ -164,7 +164,8 @@ class InputDelegate extends Ui.BehaviorDelegate
 			onStartWork();
 		}
 		else if (state == WORKING) {
-			title_string = "No slacking!";
+			//title_string = "No slacking!";
+			timerDuration = 0;
 		}
 		else if (state == WORK_COMPLETE) {
 			onStartBreak();
@@ -182,11 +183,5 @@ class InputDelegate extends Ui.BehaviorDelegate
     {
         Ui.pushView(new TimePicker(), new TimePickerDelegate(), Ui.SLIDE_IMMEDIATE);
         return true;
-    }
-    
-    function onNextPage()
-    {
-		System.println("In Reset");
-		onBreakComplete();
     }
 }
