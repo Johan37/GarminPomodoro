@@ -133,7 +133,13 @@ class MyWatchView extends Ui.View
       	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
         dc.clear();
         dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
-        var string = timeLeft / 60 + ":" + timeLeft % 60;
+        var string;
+        if ( (timeLeft / 60 / 60) >= 1 ) {
+        	string = timeLeft / 60 / 60 + ":" + timeLeft / 60 % 60 + ":" + timeLeft % 60;
+        }
+        else {
+        	string = timeLeft / 60 + ":" + timeLeft % 60;
+    	}
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 50 , Gfx.FONT_MEDIUM, title_string, Gfx.TEXT_JUSTIFY_CENTER );
         dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2) - 20, Gfx.FONT_NUMBER_HOT, string, Gfx.TEXT_JUSTIFY_CENTER );
     }
